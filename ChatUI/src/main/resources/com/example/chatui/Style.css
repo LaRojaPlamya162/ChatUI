@@ -1,0 +1,7 @@
+.text {
+    -fx-text-fill: black;
+    -fx-font-family: "Comic Sans MS";
+}
+#sendButton:hover {
+-fx-background-color: blue;
+}

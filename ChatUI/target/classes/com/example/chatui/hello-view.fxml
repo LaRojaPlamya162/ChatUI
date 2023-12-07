@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="441.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatui.HelloController">
+   <children>
+      <Label alignment="CENTER" layoutX="45.0" layoutY="-2.0" prefHeight="54.0" prefWidth="398.0" text="Anonymous User" textAlignment="CENTER" />
+      <ImageView fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-back-50.png" />
+         </image>
+      </ImageView>
+      <HBox layoutY="482.0" prefHeight="45.0" prefWidth="442.0">
+         <children>
+            <TextField fx:id="SendTxtField" prefHeight="46.0" prefWidth="411.0" promptText="Nhắn tin" />
+            <ImageView fx:id="sendButton" fitHeight="43.0" fitWidth="100.0" onMouseClicked="#sendAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-send-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <ScrollPane fx:id="sp_main" layoutY="39.0" prefHeight="443.0" prefWidth="441.0">
+         <content>
+            <VBox fx:id="vboxMessages" prefHeight="442.0" prefWidth="440.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
